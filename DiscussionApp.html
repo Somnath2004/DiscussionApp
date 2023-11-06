@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Discussion portal</title>
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.first-container {
+			font-size: 25px;
+			color: white;
+			width: 100%;
+			background-color: darkcyan;
+			padding-top: 10px;
+			padding-bottom: 20px;
+		}
+		.second-container {
+			display: flex;
+		}
+		.right-panel {
+			width: 50%;
+			background-color: lightgrey;
+			border-right: 1px solid black;
+		}
+		.right-panel-contain {
+			background-color: white;
+		}
+
+		.right-panel-contain-1 {
+			background-color: blue;
+			margin: 1rem;
+			color: white;
+			border: none;
+			padding: 10px;
+			border-radius: 5px;
+		}
+		.left-panel {
+			width: 50%;
+		}
+		.left-panel h6 {
+			font-family: sans-serif;
+			font-weight: bold;
+		}
+		.left-panel #ansbox {
+			width: 20rem;
+			height: 3rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			margin-left: 2rem;
+			border-top: none;
+			border-right: none;
+			font-size: 2rem;
+		}
+		.left-panel #textbox {
+			width: 20rem;
+			border-right: none;
+			border-top: none;
+			outline: none;
+			font-size: 2rem;
+			margin-left: 2rem;
+		}
+		.innersubmit {
+		}
+		.submitbutton {
+			display: flex;
+			align-items: flex-end;
+		}
+		#submitbut{
+			/* display:block;
+			text-align: right;
+			 */
+			 color: blue;
+			 position:relative;
+			 left:300px;
+
+			}
+			#submitdiv{
+				margin: right;
+				
+			}
+	</style>
+	<body>
+		<div class="first-container">Disscussion Portal</div>
+		<div class="second-container">
+			<div class="right-panel">
+				<div class="right-panel-first">
+					<div class="right-panel-contain">
+						<button class="right-panel-contain-1">Next Question form</button>
+						<input
+							type="text"
+							name="searchbox"
+							id="right-panel-contain-2"
+							placeholder="search question"
+						/>
+						
+					</div>
+				</div>
+			</div>
+			<div class="left-panel">
+				<h1>Welcome to Discussion Portal</h1>
+				<h6>Enter a subject and question to get started</h6>
+				<div>
+					<input type="text" name="ans" id="ansbox" placeholder="subject" />
+				</div>
+				<textarea id="textbox"> </textarea> <br/>
+				<button id="submitbut">submit</button>
+				
+			</div>
+		</div>
+	</body>
+</html>
